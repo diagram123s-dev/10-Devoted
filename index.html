@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Devoted App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>10 - Devoted</h1>
+        <p>Classroom Remembrance</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('schedule')">Schedule</button>
+        <button onclick="showSection('gallery')">Gallery</button>
+        <button onclick="showSection('officers')">Officers</button>
+        <button onclick="showSection('honors')">Honors 🏆</button>
+    </nav>
+
+    <main id="content">
+        <section id="home">
+          <section id="home">
+    <div style="text-align: center; padding-top: 15px;">
+        <span class="status-badge">📍  | Section Devoted</span>
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-box"><span>45</span><span class="stat-label">Students</span></div>
+        <div class="stat-box"><span>9</span><span class="stat-label">Subjects</span></div>
+        <div class="stat-box"><span>G10</span><span class="stat-label">Level</span></div>
+    </div>
+    
+
+    
+    </section>
+            <div class="card motto-card">
+                <p class="motto-text">"Devoted to Excellence, United in Service."</p>
+            </div>
+            <div class="card">
+                <h3>Reminder</h3>
+                <ul class="announcement-list">
+                    <li><strong>> Hey everyone!  So, this is it! It's been an absolute blast being in class with all of you and learning from our fantastic teachers. Thanks for all the good times, the study sessions (and maybe a few not so serious ones ), and for making school feel like home. Keep shining, everyone! See ya around!</strong></li>
+                    <li><strong>Congtratiolations to everyone</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="schedule" style="display:none;">
+            <h2>Class Schedule</h2>
+            <div id="schedule-list"></div>
+        </section>
+
+        <section id="gallery" style="display:none;">
+            <h2>Class Gallery</h2>
+            <div class="memory-grid">
+                <div class="memory-item" onclick="openFullView('photo1.jpg', 'Christmas Party')">
+                    <img src="photo1.jpg" alt="Memory 1">
+                    <div class="photo-info">Christmas Party</div>
+                </div>
+                <div class="memory-item" onclick="openFullView('photo2.jpg', 'Medical Career')">
+                    <img src="photo2.jpg" alt="Memory 2">
+                    <div class="photo-info">Medic Career</div>
+                </div>
+                <div class="memory-item" onclick="openFullView('photo3.jpg', 'Pictorial')">
+                    <img src="photo3.jpg" alt="Memory 3">
+                    <div class="photo-info">Pictorial</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="honors" style="display:none;">
+    <div class="header-banner">
+        <h2>🏆 Honor Roll</h2>
+        <p>Recognizing Excellence in Section Devoted</p>
+    </div>
+
+    <div class="card honor-card">
+        <h3>First Quarter</h3>
+        <div class="honor-list">
+            <div class="honor-item"><span>
+              
+            </span> <strong>Wennie Ayunting:</strong> <small> With High Honors</small></div>
+            <div class="honor-item"><span>
+              
+            </span> <strong>Ann Boyore:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+              
+            </span> <strong>Christine Cabaron:</strong> <small>With Honors</small></div>      
+            <div class="honor-item"><span>
+            </span> <strong>Shanelle Cruzada:</strong> <small>With Honors</small></div>    
+            <div class="honor-item"><span>
+            </span> <strong>Claire Estrada:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Daryl Jaraula:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Gwen Ligutan:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Mark Mangubat:</strong> <small>With Honor (Developer) </small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Sydney Raterta:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Kashmir Villanueva:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+        </div>
+    </div>
+
+    <div class="card honor-card">
+        <h3>Second Quarter</h3>
+        <div class="honor-list">
+            <div class="honor-item"><span></span></span> <strong>Wennie Ayunting</strong> <small>With High Honors</small></div>
+
+            <div class="honor-item"><span>
+              
+            </span> <strong>Ann Boyore:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+              
+            </span> <strong>Christine Cabaron:</strong> <small>With Honors</small></div>      
+            <div class="honor-item"><span>
+            </span> <strong>Shanelle Cruzada:</strong> <small>With Honors</small></div>    
+            <div class="honor-item"><span>
+            </span> <strong>Claire Estrada:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Daryl Jaraula:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Gwen Ligutan:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Mark Mangubat:</strong> <small>With Honor (Developer) </small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Sydney Raterta:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Kashmir Villanueva:</strong> <small>With Honors</small></div>
+        </div>
+    </div>
+        <div class="card honor-card">
+        <h3>Third Quarter</h3>
+        <div class="honor-list">
+            <div class="honor-item"><span></span></span> <strong>Wennie Ayunting</strong> <small>With High Honors</small></div>
+            <div class="honor-item"><span></span><strong>Angelyn Abanes:</strong><small>With High Honors</small></div>
+
+            <div class="honor-item"><span>
+              
+            </span> <strong>Ann Boyore:</strong> <small>With Honors</small></div>
+
+              
+           <div class="honor-item"><span></span><strong>Princess Bahian:</strong><small>With High Honors</small></div>
+           <div class="honor-item"><span>
+            </span> <strong>Christine Cabaron:</strong> <small>With Honors</small></div>      
+            <div class="honor-item"><span>
+            </span> <strong>Shanelle Cruzada:</strong> <small>With Honors</small></div>    
+            <div class="honor-item"><span>
+            </span> <strong>Claire Estrada:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Daryl Jaraula:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Gwen Ligutan:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Mark Mangubat:</strong> <small>With Honor (Developer) </small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Sydney Raterta:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Kashmir Villanueva:</strong> <small>With Honors</small></div>
+        </div>
+    </div>
+            <div class="card honor-card">
+        <h3>Third Quarter</h3>
+        <div class="honor-list">
+            <div class="honor-item"><span></span></span> <strong>Wennie Ayunting</strong> <small>With High Honors</small></div>
+            <div class="honor-item"><span></span><strong>Angelyn Abanes:</strong><small>With High Honors</small></div>
+
+            <div class="honor-item"><span>
+              
+            </span> <strong>Ann Boyore:</strong> <small>With Honors</small></div>
+
+              
+           <div class="honor-item"><span></span><strong>Princess Bahian:</strong><small>With High Honors</small></div>
+           <div class="honor-item"><span>
+            </span> <strong>Christine Cabaron:</strong> <small>With Honors</small></div>      
+            <div class="honor-item"><span>
+            </span> <strong>Shanelle Cruzada:</strong> <small>With Honors</small></div>    
+            <div class="honor-item"><span>
+            </span> <strong>Claire Estrada:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Daryl Jaraula:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Gwen Ligutan:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Mark Mangubat:</strong> <small>With Honor (Developer) </small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Sydney Raterta:</strong> <small>With Honors</small></div>
+            <div class="honor-item"><span>
+            </span> <strong>Kashmir Villanueva:</strong> <small>With Honors</small></div>
+        </div>
+    </div>
+</section>
+
+        <section id="officers" style="display:none;">
+            <h2>Class Officers</h2>
+            <div class="card">
+                <p><strong>President:</strong> [Gwen Abby Gayle Ligutan]</p>
+                <p><strong>Vice Pres:</strong> [Shanelle Cruzada]</p>
+                <p><strong>Secretary:</strong> [Sydney Raterta]</p>
+                <p><strong>Auditor:</strong> [Jeribeth Palasol]</p>
+                <p><strong>Treasurer:</strong> [Daryl Jaraula]</p>
+                <p><strong>PIO:</strong> [Ann Boyore]</p>
+                <p><strong>Prince:</strong> [Christian Abilido]</p>
+                <p><strong>Muse:</strong> [Isabella Galagnara]</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <div id="teacher-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-subject"></h3>
+            <p id="modal-teacher"></p>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeFullView()">
+        <span class="close-btn">&times;</span>
+        <img id="full-image" src="">
+        <p id="caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
